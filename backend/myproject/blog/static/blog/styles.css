@@ -1,0 +1,122 @@
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul, li, nav, header, footer, section, article, aside, form, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.blog-posts {
+    width: 70%;
+}
+
+.post {
+    margin-bottom: 40px;
+}
+
+.post h2 {
+    margin-bottom: 10px;
+}
+
+.post-meta {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.post-content {
+    margin-bottom: 20px;
+}
+
+.read-more {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    background-color: #555;
+}
+
+.sidebar {
+    width: 25%;
+}
+
+.sidebar section {
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icons {
+    list-style-type: none;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    text-indent: -9999px; /* Hide text */
+}
+
+.icon-facebook {
+    background-image: url('facebook-icon.png'); /* Replace with actual icon */
+}
+
+.icon-twitter {
+    background-image: url('twitter-icon.png'); /* Replace with actual icon */
+}
+
+.icon-instagram {
+    background-image: url('instagram-icon.png'); /* Replace with actual icon */
+}

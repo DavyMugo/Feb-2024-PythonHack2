@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+</head>
+<body>
+    <h1>Weather Information</h1>
+    <p>Location: {{ location.name }}, {{ location.region }}, {{ location.country }}</p>
+    <p>Last Updated: {{ current.last_updated }}</p>
+    <p>Temperature: {{ current.temp_c }}°C</p>
+    <p>Condition: {{ current.condition.text }}</p>
+    <p>Wind Speed: {{ current.wind_kph }} km/h</p>
+    <p>Pressure: {{ current.pressure_mb }} mb</p>
+    <p>Precipitation: {{ current.precip_mm }} mm</p>
+    <p>Humidity: {{ current.humidity }}%</p>
+    <p>Cloud Cover: {{ current.cloud }}%</p>
+    <p>Feels Like: {{ current.feelslike_c }}°C</p>
+    <p>Visibility: {{ current.vis_km }} km</p>
+    <p>UV Index: {{ current.uv }}</p>
+    <!-- Add more weather data fields as needed -->
+    <!-- <h1>Weather Information</h1>
+    <p>Location: {{ location.name }}, {{ location.region }}, {{ location.country }}</p>
+    <p>Last Updated: {{ current.last_updated }}</p>
+    <p>Temperature: {{ current.temp_c }}°C</p>
+    <p>Condition: {{ current.condition.text }}</p>
+    Add more weather data fields as needed -->
+</body>
+</html>
