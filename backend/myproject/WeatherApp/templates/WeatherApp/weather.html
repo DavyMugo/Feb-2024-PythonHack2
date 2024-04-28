@@ -20,11 +20,26 @@
     <p>Visibility: {{ current.vis_km }} km</p>
     <p>UV Index: {{ current.uv }}</p>
     <!-- Add more weather data fields as needed -->
-    <!-- <h1>Weather Information</h1>
-    <p>Location: {{ location.name }}, {{ location.region }}, {{ location.country }}</p>
-    <p>Last Updated: {{ current.last_updated }}</p>
-    <p>Temperature: {{ current.temp_c }}°C</p>
-    <p>Condition: {{ current.condition.text }}</p>
-    Add more weather data fields as needed -->
+    <script>
+        fetch('/WeatherApp/weather')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('location_name').textContent = data.location.name;
+                document.getElementById('location_region').textContent = data.location.region;
+                document.getElementById('location_country').textContent = data.location.country;
+                document.getElementById('last_updated').textContent = data.current.last_updated;
+                document.getElementById('temperature').textContent = data.current.temp_c;
+                document.getElementById('condition').textContent = data.current.condition.text;
+                document.getElementById('wind_speed').textContent = data.current.wind_kph;
+                document.getElementById('pressure').textContent = data.current.pressure_mb;
+                document.getElementById('precipitation').textContent = data.current.precip_mm;
+                document.getElementById('humidity').textContent = data.current.humidity;
+                document.getElementById('cloud_cover').textContent = data.current.cloud;
+                document.getElementById('feels_like').textContent = data.current.feelslike_c;
+                document.getElementById('visibility').textContent = data.current.vis_km;
+                document.getElementById('uv_index').textContent = data.current.uv;
+            })
+            .catch(error => console.error('Error fetching weather data:', error));
+    </script>
 </body>
 </html>
